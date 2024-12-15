@@ -1,0 +1,26 @@
+Se van a cargar: 4 reglas del fichero: ..\ficheros\BC-1.txt
+Se van a cargar: 5 hechos del fichero: ..\ficheros\BH-1.txt
+Objetivo: h1
+Verificando h1
+  Verificando h2
+  El FC de h2 es 0.3
+  Verificando h3
+    Verificando h5
+    El FC de h5 es 0.6
+    Verificando h6
+    El FC de h6 es 0.9
+      Aplicando el caso 1 a h5 y h6
+    El FC calculado aplicando el caso 3 para la regla R3: Si h5 y h6, Entonces h3 Con FC= 0.700, es 0.42
+    Verificando h7
+    El FC de h7 es 0.5
+    El FC calculado aplicando el caso 3 para la regla R4: Si h7, Entonces h3 Con FC= -0.500, es -0.25
+      Aplicando el caso 2 a las reglas R3 y R4
+    El FC calculado para h3 es 0.226667
+    Aplicando el caso 1 a h2 o h3
+  El FC calculado aplicando el caso 3 para la regla R1: Si h2 o h3, Entonces h1 Con FC= 0.500, es 0.15
+  Verificando h4
+  El FC de h4 es 0.6
+  El FC calculado aplicando el caso 3 para la regla R2: Si h4, Entonces h1 Con FC= 1.000, es 0.6
+    Aplicando el caso 2 a las reglas R1 y R2
+  El FC calculado para h1 es 0.66
+La meta h1 es cierta con FC = 0.66

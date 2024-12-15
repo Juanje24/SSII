@@ -1,19 +1,17 @@
 {
-  "configurations": [
-    {
-      "name": "linux-gcc-x64",
-      "includePath": [
-        "${workspaceFolder}/**",
-        "${workspaceFolder}/ENTREGA/include"// Añadir carpeta include
-      ],
-      "compilerPath": "/usr/bin/gcc",
-      "cStandard": "${default}",
-      "cppStandard": "${default}",
-      "intelliSenseMode": "linux-gcc-x64",
-      "compilerArgs": [
-        ""
-      ]
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "name": "windows-gcc-x64",
+            "includePath": [
+                "f:/Documentos Juanito/Clase/0 UNI/3_INF/SSII/SSII/**",
+                "C:\\mysys64\\usr\\include",
+                "C:\\mysys64\\usr\\lib\\gcc\\x86_64-pc-msys\\13.3.0\\include\\c++\\x86_64-pc-msys",
+                "C:\\mysys64\\usr\\lib\\gcc\\x86_64-pc-msys/13.3.0\\include\\c++\\x86_64-pc-msys\\bits"
+            ],
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPath": "C:\\mysys64\\usr\\bin\\g++.exe"
+        }
+    ],
+    "version": 4
 }

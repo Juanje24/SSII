@@ -19,7 +19,7 @@ private:
 public:
     BaseHechos();
     ~BaseHechos();
-    void cargaBH(string fichero);
+    void cargaBH(string fichero, ofstream &archivo);
     void addHecho(string nombre, float fc);
     void addObjetivo(string nombre);
     bool contiene(string nombre);

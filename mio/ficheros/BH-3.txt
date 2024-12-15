@@ -1,0 +1,10 @@
+7
+antiguedad23, FC=-1
+antiguedadMas3, FC=1
+conducir23, FC=1
+conducirMas3, FC=-1
+noSolo, FC=-1
+joven, FC=0.4
+bebido, FC=0
+Objetivo
+causante

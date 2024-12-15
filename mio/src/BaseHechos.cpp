@@ -9,7 +9,7 @@ BaseHechos::BaseHechos()
 BaseHechos::~BaseHechos()
 {
 }
-void BaseHechos::cargaBH(string fichero)
+void BaseHechos::cargaBH(string fichero, ofstream &archivo)
 {
     ifstream fuente;
     fuente.open(fichero);
@@ -22,14 +22,14 @@ void BaseHechos::cargaBH(string fichero)
     float factorCerteza;
     getline(fuente, linea);
     linea.pop_back();
-    cout << "Se van a cargar: " << linea << " hechos " << "del fichero: " << fichero << endl;
+    archivo << "Se van a cargar: " << linea << " hechos " << "del fichero: " << fichero << endl;
     while (getline(fuente, linea))
     {
         linea.pop_back();
         if (linea == "Objetivo")
         {
             getline(fuente, linea);
-            linea = linea.substr(0, (int)linea.size() - 1);
+            linea = linea.substr(0, (int)linea.size());
             this->addObjetivo(linea);
             fuente.close();
             return;

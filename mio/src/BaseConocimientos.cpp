@@ -9,7 +9,7 @@ BaseConocimientos::BaseConocimientos()
 BaseConocimientos::~BaseConocimientos()
 {
 }
-void BaseConocimientos::cargarBC(string fichero)
+void BaseConocimientos::cargarBC(string fichero, ofstream &archivo)
 {
     ifstream fuente;
     fuente.open(fichero);
@@ -23,7 +23,7 @@ void BaseConocimientos::cargarBC(string fichero)
     Regla r;
     getline(fuente, linea);
     linea.pop_back();
-    cout << "Se van a cargar: " << linea << " reglas del fichero: " << fichero << endl;
+    archivo << "Se van a cargar: " << linea << " reglas del fichero: " << fichero << endl;
     while (getline(fuente, linea))
     {
         linea.pop_back();

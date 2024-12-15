@@ -110,5 +110,6 @@
     "streambuf": "cpp",
     "cinttypes": "cpp",
     "typeinfo": "cpp"
-  }
+  },
+  "C_Cpp.default.compilerPath": "c:\\mysys64\\usr\\bin\\g++.exe"
 }

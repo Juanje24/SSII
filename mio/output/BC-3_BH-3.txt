@@ -1,0 +1,37 @@
+Se van a cargar: 7 reglas del fichero: ..\ficheros\BC-3.txt
+Se van a cargar: 7 hechos del fichero: ..\ficheros\BH-3.txt
+Objetivo: causante
+Verificando causante
+  Verificando experimentado
+    Verificando antiguedad23
+    El FC de antiguedad23 es -1
+    El FC calculado aplicando el caso 3 para la regla R1: Si antiguedad23, Entonces experimentado Con FC= 0.500, es 0
+    Verificando antiguedadMas3
+    El FC de antiguedadMas3 es 1
+    El FC calculado aplicando el caso 3 para la regla R2: Si antiguedadMas3, Entonces experimentado Con FC= 0.900, es 0.9
+      Aplicando el caso 2 a las reglas R1 y R2
+    El FC calculado para experimentado es 0.9
+  Verificando noSolo
+  El FC de noSolo es -1
+    Aplicando el caso 1 a experimentado y noSolo
+  El FC calculado aplicando el caso 3 para la regla R5: Si experimentado y noSolo, Entonces causante Con FC= -0.500, es -0
+  Verificando cansado
+    Verificando conducir23
+    El FC de conducir23 es 1
+    El FC calculado aplicando el caso 3 para la regla R3: Si conducir23, Entonces cansado Con FC= 0.500, es 0.5
+    Verificando conducirMas3
+    El FC de conducirMas3 es -1
+    El FC calculado aplicando el caso 3 para la regla R4: Si conducirMas3, Entonces cansado Con FC= 1.000, es 0
+      Aplicando el caso 2 a las reglas R3 y R4
+    El FC calculado para cansado es 0.5
+  El FC calculado aplicando el caso 3 para la regla R6: Si cansado, Entonces causante Con FC= 0.500, es 0.25
+  Verificando joven
+  El FC de joven es 0.4
+  Verificando bebido
+  El FC de bebido es 0
+    Aplicando el caso 1 a joven o bebido
+  El FC calculado aplicando el caso 3 para la regla R7: Si joven o bebido, Entonces causante Con FC= 0.700, es 0.28
+    Aplicando el caso 2 a las reglas R5 y R6
+    Aplicando el caso 2 a las reglas R6 y R7
+  El FC calculado para causante es 0.46
+La meta causante es cierta con FC = 0.46

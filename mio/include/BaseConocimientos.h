@@ -14,7 +14,7 @@ private:
 public:
     BaseConocimientos();
     ~BaseConocimientos();
-    void cargarBC(string fichero);
+    void cargarBC(string fichero, ofstream &archivo);
     void addRegla(Regla r);
     void imprimirBC();
     vector<Regla> equiparar(string objetivo);

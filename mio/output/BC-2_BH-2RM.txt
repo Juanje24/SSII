@@ -1,0 +1,20 @@
+Se van a cargar: 6 reglas del fichero: ..\ficheros\BC-2.txt
+Se van a cargar: 7 hechos del fichero: ..\ficheros\BH-2RM.txt
+Objetivo: ganaRM
+Verificando ganaRM
+  Verificando arbMod
+  El FC de arbMod es 1
+  El FC calculado aplicando el caso 3 para la regla R2: Si arbMod, Entonces ganaRM Con FC= 0.750, es 0.75
+  Verificando publicoMayEST
+  El FC de publicoMayEST es 0.65
+  El FC calculado aplicando el caso 3 para la regla R3: Si publicoMayEST, Entonces ganaRM Con FC= -0.400, es -0.26
+  Verificando les2pivRM
+  El FC de les2pivRM es 1
+  Verificando visitanteRM
+  El FC de visitanteRM es 1
+    Aplicando el caso 1 a les2pivRM y visitanteRM
+  El FC calculado aplicando el caso 3 para la regla R5: Si les2pivRM y visitanteRM, Entonces ganaRM Con FC= -0.100, es -0.1
+    Aplicando el caso 2 a las reglas R2 y R3
+    Aplicando el caso 2 a las reglas R3 y R5
+  El FC calculado para ganaRM es 0.624625
+La meta ganaRM es cierta con FC = 0.624625

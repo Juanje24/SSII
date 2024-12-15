@@ -10,6 +10,7 @@ private:
     BaseConocimientos BC;
     BaseHechos BH;
     vector<string> metas;
+    ofstream *archivo;
     float verificarFC(string objetivo, int nivel);
 
 public:
