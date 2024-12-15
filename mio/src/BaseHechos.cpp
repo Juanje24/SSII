@@ -2,6 +2,15 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
+// Método auxiliar para limpiar los saltos de línea y espacios al final de una cadena
+string limpiar_final(string cadena)
+{
+    while (cadena[cadena.size() - 1] == '\n' || cadena[cadena.size() - 1] == '\r' || cadena[cadena.size() - 1] == ' ')
+    {
+        cadena.pop_back();
+    }
+    return cadena;
+}
 
 BaseHechos::BaseHechos()
 {
@@ -34,7 +43,7 @@ void BaseHechos::cargaBH(string fichero, ofstream &archivo)
         if (linea == "Objetivo")
         {
             getline(fuente, linea);
-            linea = linea.substr(0, (int)linea.size());
+            linea = limpiar_final(linea);
             this->addObjetivo(linea); // añade el objetivo a la base de hechos
             fuente.close();
             return;
@@ -131,6 +140,6 @@ void BaseHechos::imprimirBH()
     cout << "Objetivos:" << endl;
     for (int i = 0; i < (int)objetivos.size(); i++)
     {
-        cout << objetivos[i] << endl;
+        cout << "/" << objetivos[i] << "/" << endl;
     }
 }

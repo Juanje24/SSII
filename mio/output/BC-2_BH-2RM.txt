@@ -12,9 +12,9 @@ Verificando ganaRM
   El FC de les2pivRM es 1
   Verificando visitanteRM
   El FC de visitanteRM es 1
-    Aplicando el caso 1 a les2pivRM y visitanteRM
+    Aplicando el caso 1 a les2pivRM y visitanteRM FC=1
   El FC calculado aplicando el caso 3 para la regla R5: Si les2pivRM y visitanteRM, Entonces ganaRM Con FC= -0.100, es -0.1
-    Aplicando el caso 2 a las reglas R2 y R3
-    Aplicando el caso 2 a las reglas R3 y R5
+    Aplicando el caso 2 a las reglas R2 y R3, FC=0.662162
+    Aplicando el caso 2 a las reglas R3 y R5, FC=0.624625
   El FC calculado para ganaRM es 0.624625
 La meta ganaRM es cierta con FC = 0.624625

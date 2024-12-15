@@ -13,6 +13,7 @@ private:
     vector<string> metas;
     ofstream *archivo;
     string nombreSalida;
+    bool debug;
     float verificarFC(string objetivo, int nivel);
 
 public:

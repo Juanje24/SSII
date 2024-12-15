@@ -11,7 +11,7 @@ Verificando ganaEST
   Verificando les2pivEST
   El FC de les2pivEST es 1
   El FC calculado aplicando el caso 3 para la regla R6: Si les2pivEST, Entonces ganaEST Con FC= -0.600, es -0.6
-    Aplicando el caso 2 a las reglas R1 y R4
-    Aplicando el caso 2 a las reglas R4 y R6
+    Aplicando el caso 2 a las reglas R1 y R4, FC=0.256966
+    Aplicando el caso 2 a las reglas R4 y R6, FC=-0.461667
   El FC calculado para ganaEST es -0.461667
 La meta ganaEST es cierta con FC = -0.461667

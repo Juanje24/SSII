@@ -18,7 +18,7 @@ Verificando ganador
     Verificando bajasMas5
     El FC de bajasMas5 es 1
     El FC calculado aplicando el caso 3 para la regla R2: Si bajasMas5, Entonces enRacha Con FC= 1.000, es 1
-      Aplicando el caso 2 a las reglas R1 y R2 FC=1
+      Aplicando el caso 2 a las reglas R1 y R2, FC=1
     El FC calculado para enRacha es 1
   Verificando tranquilo
     Verificando conexEstable
@@ -27,11 +27,11 @@ Verificando ganador
     Verificando conexInestable
     El FC de conexInestable es -1
     El FC calculado aplicando el caso 3 para la regla R4: Si conexInestable, Entonces tranquilo Con FC= -1.000, es -0
-      Aplicando el caso 2 a las reglas R3 y R4 FC=0.6
+      Aplicando el caso 2 a las reglas R3 y R4, FC=0.6
     El FC calculado para tranquilo es 0.6
     Aplicando el caso 1 a enRacha y tranquilo FC=0.6
   El FC calculado aplicando el caso 3 para la regla R7: Si enRacha y tranquilo, Entonces ganador Con FC= 0.850, es 0.51
-    Aplicando el caso 2 a las reglas R5 y R6 FC=-0.4
-    Aplicando el caso 2 a las reglas R6 y R7 FC=0.183333
+    Aplicando el caso 2 a las reglas R5 y R6, FC=-0.4
+    Aplicando el caso 2 a las reglas R6 y R7, FC=0.183333
   El FC calculado para ganador es 0.183333
 La meta ganador es cierta con FC = 0.183333

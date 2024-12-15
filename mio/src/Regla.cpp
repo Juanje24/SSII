@@ -88,16 +88,16 @@ void Regla::imprimir()
     cout << "Si ";
     for (int i = 0; i < antecedente.num_literales; i++)
     {
-        cout << antecedente.literal[i];
+        cout << "/" << antecedente.literal[i] << "/";
         if (i < antecedente.num_literales - 1)
         {
-            cout << " " << antecedente.operador[i] << " ";
+            cout << "/" << antecedente.operador[i] << "/";
         }
     }
     cout << ", Entonces ";
     for (int i = 0; i < consecuente.num_literales; i++)
     {
-        cout << consecuente.literal[i] << " ";
+        cout << "/" << consecuente.literal[i] << "/";
         if (i < consecuente.num_literales - 1)
         {
             cout << " " << consecuente.operador[i] << " ";

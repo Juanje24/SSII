@@ -35,7 +35,7 @@ MotorInferencias::MotorInferencias(string baseConocimiento, string baseHecho)
     int posInicioNombreBH = baseHecho.find_last_of("B") + 1;
     string nombreBC = baseConocimiento.substr(posInicioNombreBC - 1, posFinnombreBC - posInicioNombreBC + 1);
     string nombreBH = baseHecho.substr(posInicioNombreBH - 1, posFinnombreBH - posInicioNombreBH + 1);
-    nombreSalida = "..\\output\\" + nombreBC + "_" + nombreBH + ".txt";
+    nombreSalida = nombreBC + "_" + nombreBH + ".txt";
     archivo = new ofstream(nombreSalida);
     BC.cargarBC(baseConocimiento, *archivo);
     BH.cargaBH(baseHecho, *archivo);
@@ -55,10 +55,11 @@ MotorInferencias::MotorInferencias(string baseConocimiento, string baseHecho, bo
     int posInicioNombreBH = baseHecho.find_last_of("B") + 1;
     string nombreBC = baseConocimiento.substr(posInicioNombreBC - 1, posFinnombreBC - posInicioNombreBC + 1);
     string nombreBH = baseHecho.substr(posInicioNombreBH - 1, posFinnombreBH - posInicioNombreBH + 1);
-    nombreSalida = "..\\output\\" + nombreBC + "_" + nombreBH + ".txt";
+    nombreSalida = nombreBC + "_" + nombreBH + ".txt";
     archivo = new ofstream(nombreSalida);
     BC.cargarBC(baseConocimiento, *archivo);
     BH.cargaBH(baseHecho, *archivo);
+    this->debug = debug;
     if (debug)
     {
         BC.imprimirBC();
@@ -81,7 +82,11 @@ void MotorInferencias::encadenamientoHaciaAtras()
         if (fc >= -1 && fc <= 1)
         {
             *archivo << "La meta " << objetivos[i] << " es cierta con FC = " << fc << endl;
-            cout << "Resultado guardado en " << "..\\output\\" << endl;
+            cout << "Resultado guardado en: " << nombreSalida << endl;
+            if (debug)
+            {
+                cout << "La meta " << objetivos[i] << " es cierta con FC = " << fc << endl;
+            }
         }
         else
         {
@@ -171,7 +176,7 @@ float MotorInferencias::verificarFC(string objetivo, int nivel)
             {
                 factoresCerteza[i + 1] = (factoresCerteza[i] + factoresCerteza[i + 1]) / (1 - min(abs(factoresCerteza[i]), abs(factoresCerteza[i + 1])));
             }
-            *archivo << " FC=" << factoresCerteza[i + 1] << endl;
+            *archivo << ", FC=" << factoresCerteza[i + 1] << endl;
         }
         // Se añade el objetivo a BH con el FC calculado y se devuelve
         BH.addHecho(objetivo, factoresCerteza.back());
