@@ -7,10 +7,12 @@ using namespace std;
 class MotorInferencias
 {
 private:
+    // El motor de inferencias se compone de una base de conocimientos y una base de hechos, y la(s) meta(s) a verificar
     BaseConocimientos BC;
     BaseHechos BH;
     vector<string> metas;
     ofstream *archivo;
+    string nombreSalida;
     float verificarFC(string objetivo, int nivel);
 
 public:

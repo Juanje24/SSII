@@ -5,7 +5,7 @@
 #include <vector>
 
 using namespace std;
-
+// Defino los antecedentes y los consecuentes como una combinación de literales y operadores
 struct parteBase
 {
     vector<string> literal;
@@ -14,7 +14,7 @@ struct parteBase
 };
 class Regla
 {
-
+    // Cada regla tiene nombre, antecedentes, consecuentes y factor de certeza
 private:
     string nombre;
     parteBase antecedente;

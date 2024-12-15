@@ -9,11 +9,11 @@ Verificando causante
     Verificando antiguedadMas3
     El FC de antiguedadMas3 es 1
     El FC calculado aplicando el caso 3 para la regla R2: Si antiguedadMas3, Entonces experimentado Con FC= 0.900, es 0.9
-      Aplicando el caso 2 a las reglas R1 y R2
+      Aplicando el caso 2 a las reglas R1 y R2 FC=0.9
     El FC calculado para experimentado es 0.9
   Verificando noSolo
   El FC de noSolo es -1
-    Aplicando el caso 1 a experimentado y noSolo
+    Aplicando el caso 1 a experimentado y noSolo FC=-1
   El FC calculado aplicando el caso 3 para la regla R5: Si experimentado y noSolo, Entonces causante Con FC= -0.500, es -0
   Verificando cansado
     Verificando conducir23
@@ -22,16 +22,16 @@ Verificando causante
     Verificando conducirMas3
     El FC de conducirMas3 es -1
     El FC calculado aplicando el caso 3 para la regla R4: Si conducirMas3, Entonces cansado Con FC= 1.000, es 0
-      Aplicando el caso 2 a las reglas R3 y R4
+      Aplicando el caso 2 a las reglas R3 y R4 FC=0.5
     El FC calculado para cansado es 0.5
   El FC calculado aplicando el caso 3 para la regla R6: Si cansado, Entonces causante Con FC= 0.500, es 0.25
   Verificando joven
   El FC de joven es 0.4
   Verificando bebido
   El FC de bebido es 0
-    Aplicando el caso 1 a joven o bebido
+    Aplicando el caso 1 a joven o bebido FC=0.4
   El FC calculado aplicando el caso 3 para la regla R7: Si joven o bebido, Entonces causante Con FC= 0.700, es 0.28
-    Aplicando el caso 2 a las reglas R5 y R6
-    Aplicando el caso 2 a las reglas R6 y R7
+    Aplicando el caso 2 a las reglas R5 y R6 FC=0.25
+    Aplicando el caso 2 a las reglas R6 y R7 FC=0.46
   El FC calculado para causante es 0.46
 La meta causante es cierta con FC = 0.46

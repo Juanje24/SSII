@@ -4,15 +4,16 @@
 #include <set>
 
 using namespace std;
+// Un hecho se compone de un nombre y un factor de certeza
 struct Hecho
 {
     string nombre;
     float fc;
-    bool objetivo;
 };
 class BaseHechos
 {
 private:
+    // La base de hechos se compone de un conjunto de hechos y un conjunto de objetivos
     vector<Hecho> hechos;
     vector<string> objetivos;
 

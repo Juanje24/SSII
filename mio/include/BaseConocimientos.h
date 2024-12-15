@@ -8,6 +8,7 @@ using namespace std;
 class BaseConocimientos
 {
 private:
+    // La base de conocimientos se compone de un conjunto de reglas
     int numReglas = 0;
     vector<Regla> reglas;
 
