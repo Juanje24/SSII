@@ -4,7 +4,7 @@ SOURCES_COMMON=$(SOURCES_COMMON_CPP) $(SOURCES_COMMON_H)
 
 
 SBR-FC: $(SOURCES_COMMON)
-	g++ -std=c++20 -Wall -O3 -march=native -mtune=native -I../include $(SOURCES_COMMON_CPP) -o SBR-FC
+	g++ -std=c++20 -Wall -O3 -I../include $(SOURCES_COMMON_CPP) -o SBR-FC
 
 clean:	
 	rm -f SBR-FC

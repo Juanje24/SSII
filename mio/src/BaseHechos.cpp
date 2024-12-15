@@ -9,6 +9,11 @@ BaseHechos::BaseHechos()
 BaseHechos::~BaseHechos()
 {
 }
+/**
+ * @brief Método que carga la base de hechos desde un fichero
+ * @param fichero El fichero desde el que se va a cargar la base de hechos
+ * @param archivo El archivo de salida
+ */
 void BaseHechos::cargaBH(string fichero, ofstream &archivo)
 {
     ifstream fuente;
@@ -25,17 +30,18 @@ void BaseHechos::cargaBH(string fichero, ofstream &archivo)
     archivo << "Se van a cargar: " << linea << " hechos " << "del fichero: " << fichero << endl;
     while (getline(fuente, linea))
     {
-        linea.pop_back();
+        linea.pop_back(); // elimina el salto de línea para poder comparar
         if (linea == "Objetivo")
         {
             getline(fuente, linea);
             linea = linea.substr(0, (int)linea.size());
-            this->addObjetivo(linea);
+            this->addObjetivo(linea); // añade el objetivo a la base de hechos
             fuente.close();
             return;
         }
         else
         {
+            // se obtiene el nombre y el factor de certeza del hecho, y se añade a la base de hechos
             int posComa = linea.find(",");
             nombre = linea.substr(0, posComa);
             int posFC = linea.find("FC=");
@@ -45,6 +51,11 @@ void BaseHechos::cargaBH(string fichero, ofstream &archivo)
     }
     fuente.close();
 }
+/**
+ * @brief Método para añadir un hecho a la base de hechos
+ * @param nombre El nombre del hecho
+ * @param fc El factor de certeza del hecho
+ */
 void BaseHechos::addHecho(string nombre, float fc)
 {
     Hecho h;
@@ -52,10 +63,19 @@ void BaseHechos::addHecho(string nombre, float fc)
     h.fc = fc;
     hechos.push_back(h);
 }
+/**
+ * @brief Método para añadir un objetivo a la base de hechos
+ * @param nombre El nombre del objetivo
+ */
 void BaseHechos::addObjetivo(string nombre)
 {
     objetivos.push_back(nombre);
 }
+/**
+ * @brief Método para comprobar si un hecho está en la base de hechos
+ * @param nombre El nombre del hecho
+ * @return bool True si el hecho está en la base de hechos, false en caso contrario
+ */
 bool BaseHechos::contiene(string nombre)
 {
     for (int i = 0; i < (int)hechos.size(); i++)
@@ -67,6 +87,11 @@ bool BaseHechos::contiene(string nombre)
     }
     return false;
 }
+/**
+ * @brief Método para obtener el factor de certeza de un hecho
+ * @param nombre El nombre del hecho
+ * @return float El factor de certeza del hecho
+ */
 float BaseHechos::getFC(string nombre)
 {
     for (int i = 0; i < (int)hechos.size(); i++)
@@ -78,6 +103,10 @@ float BaseHechos::getFC(string nombre)
     }
     return -9999;
 }
+/**
+ * @brief Método para obtener los objetivos de la base de hechos
+ * @return vector<string> Los objetivos de la base de hechos
+ */
 vector<string> BaseHechos::getObjetivos()
 {
     vector<string> nombresObjetivos;
@@ -88,6 +117,9 @@ vector<string> BaseHechos::getObjetivos()
     }
     return nombresObjetivos;
 }
+/**
+ * @brief Método para imprimir la base de hechos (para propósitos de debug)
+ */
 void BaseHechos::imprimirBH()
 {
     cout << "Base de Hechos:" << endl;
