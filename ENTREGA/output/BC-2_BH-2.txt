@@ -1,0 +1,39 @@
+Se van a cargar: 6 reglas del fichero: ..\ficheros\BC-2.txt
+Se van a cargar: 7 hechos del fichero: ..\ficheros\BH-2.txt
+
+Objetivo (1 / 2): ganaEST
+Verificando ganaEST
+  Verificando arbMod
+  El FC de arbMod es 1
+  El FC calculado aplicando el caso 3 para la regla R1: Si arbMod, Entonces ganaEST Con FC= 0.400, es 0.4
+  Verificando publicoEqui
+  El FC de publicoEqui es 0.35
+  El FC calculado aplicando el caso 3 para la regla R4: Si publicoEqui, Entonces ganaEST Con FC= -0.550, es -0.1925
+  Verificando les2pivEST
+  El FC de les2pivEST es 1
+  El FC calculado aplicando el caso 3 para la regla R6: Si les2pivEST, Entonces ganaEST Con FC= -0.600, es -0.6
+    Aplicando el caso 2 a las reglas R1 y R4, FC=0.256966
+    Aplicando el caso 2 a las reglas R4 y R6, FC=-0.461667
+  El FC calculado para ganaEST es -0.461667
+La meta ganaEST es cierta con FC = -0.461667
+
+
+Objetivo (2 / 2): ganaRM
+Verificando ganaRM
+  Verificando arbMod
+  El FC de arbMod es 1
+  El FC calculado aplicando el caso 3 para la regla R2: Si arbMod, Entonces ganaRM Con FC= 0.750, es 0.75
+  Verificando publicoMayEST
+  El FC de publicoMayEST es 0.65
+  El FC calculado aplicando el caso 3 para la regla R3: Si publicoMayEST, Entonces ganaRM Con FC= -0.400, es -0.26
+  Verificando les2pivRM
+  El FC de les2pivRM es 1
+  Verificando visitanteRM
+  El FC de visitanteRM es 1
+    Aplicando el caso 1 a les2pivRM y visitanteRM FC=1
+  El FC calculado aplicando el caso 3 para la regla R5: Si les2pivRM y visitanteRM, Entonces ganaRM Con FC= -0.100, es -0.1
+    Aplicando el caso 2 a las reglas R2 y R3, FC=0.662162
+    Aplicando el caso 2 a las reglas R3 y R5, FC=0.624625
+  El FC calculado para ganaRM es 0.624625
+La meta ganaRM es cierta con FC = 0.624625
+

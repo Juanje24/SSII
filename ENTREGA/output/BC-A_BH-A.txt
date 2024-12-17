@@ -1,0 +1,39 @@
+Se van a cargar: 7 reglas del fichero: ..\ficheros\BC-A.txt
+Se van a cargar: 7 hechos del fichero: ..\ficheros\BH-A.txt
+
+Objetivo (1 / 1): ganador
+Verificando ganador
+  Verificando equipoProf
+  El FC de equipoProf es 1
+  Verificando ultMundial
+  El FC de ultMundial es -1
+    Aplicando el caso 1 a equipoProf y ultMundial FC=-1
+  El FC calculado aplicando el caso 3 para la regla R5: Si equipoProf y ultMundial, Entonces ganador Con FC= 0.900, es 0
+  Verificando antiguoCampeon
+  El FC de antiguoCampeon es 1
+  El FC calculado aplicando el caso 3 para la regla R6: Si antiguoCampeon, Entonces ganador Con FC= -0.400, es -0.4
+  Verificando enRacha
+    Verificando bajas25
+    El FC de bajas25 es -1
+    El FC calculado aplicando el caso 3 para la regla R1: Si bajas25, Entonces enRacha Con FC= 0.400, es 0
+    Verificando bajasMas5
+    El FC de bajasMas5 es 1
+    El FC calculado aplicando el caso 3 para la regla R2: Si bajasMas5, Entonces enRacha Con FC= 1.000, es 1
+      Aplicando el caso 2 a las reglas R1 y R2, FC=1
+    El FC calculado para enRacha es 1
+  Verificando tranquilo
+    Verificando conexEstable
+    El FC de conexEstable es 1
+    El FC calculado aplicando el caso 3 para la regla R3: Si conexEstable, Entonces tranquilo Con FC= 0.600, es 0.6
+    Verificando conexInestable
+    El FC de conexInestable es -1
+    El FC calculado aplicando el caso 3 para la regla R4: Si conexInestable, Entonces tranquilo Con FC= -1.000, es -0
+      Aplicando el caso 2 a las reglas R3 y R4, FC=0.6
+    El FC calculado para tranquilo es 0.6
+    Aplicando el caso 1 a enRacha y tranquilo FC=0.6
+  El FC calculado aplicando el caso 3 para la regla R7: Si enRacha y tranquilo, Entonces ganador Con FC= 0.850, es 0.51
+    Aplicando el caso 2 a las reglas R5 y R6, FC=-0.4
+    Aplicando el caso 2 a las reglas R6 y R7, FC=0.183333
+  El FC calculado para ganador es 0.183333
+La meta ganador es cierta con FC = 0.183333
+

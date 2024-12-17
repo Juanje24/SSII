@@ -1,0 +1,5 @@
+En la carpeta "ficheros" se encuentran las BC y BH de cada prueba.
+En la carpeta "include" se encuentran los ficheros de cabecera".
+En la carpeta "output" se encuentran las salidas de cada prueba.
+En la carpeta "src" se encuentra el código fuente del SBR, junto con un Makefile para compilarlo.
+El ejecutable se encuentra tanto en src como en este directorio, y se puede ejecutar según lo descrito en el manual.

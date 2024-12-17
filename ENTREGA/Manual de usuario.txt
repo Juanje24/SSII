@@ -1,0 +1,29 @@
+Para ejecutar el SBR con factores de certeza, desde la terminal ejecute:
+.\SBR-FC.exe <fichero_BC.txt> <fichero_BH.txt>
+
+En cuanto al formato de los ficheros de entrada, debe ser el especificado en el enunciado de la práctica:
+
+-Para la base de conocimientos, la primera línea es el número de reglas, y luego para cada regla se sigue el formato:
+nombre: Si antecedentes Entonces consecuentes, FC=X.X (salto de línea)
+-Para la base de hechos la primera línea es el número de hechos, y luego para cada hecho se sigue el formato:
+hecho, FC=X.X
+Y una vez que se pone la palabra clave "Objetivo" se especifica el nombre del mismo. Después del nombre del objetivo se recomienda no incluir nada, aunque 
+el sistema soporta espacios, saltos de línea y retornos de carro. Se pueden incluir múltiples objetivos después de la palabra clave "Objetivo,
+pero solo puede ser 1 por línea. Así, si se quisieran incluir 3 objetivos, se haría:
+
+**hechos**
+Objetivo
+obj1
+obj2
+obj3
+
+
+El formato de la salida es el siguiente: 
+
+- Las 2 primeras líneas indican las líneas y los nombres de los ficheros de la BC y la BH respectivamente.
+- La siguiente línea es el nombre del objetivo.
+- Posteriormente se empieza a informar del encadenamiento, informando en cada momento el hecho que se está verificando,
+y las reglas que se aplican.
+- Finalmente se informa del FC calculado para el objetivo.
+Si hubiera más de un objetivo, se imprimiría el nombre del siguiente objetivo y se informaría del encadenamiento.
+
