@@ -39,7 +39,7 @@ void BaseHechos::cargaBH(string fichero, ofstream &archivo)
     archivo << "Se van a cargar: " << linea << " hechos " << "del fichero: " << fichero << endl;
     while (getline(fuente, linea))
     {
-        linea.pop_back(); // elimina el salto de línea para poder comparar
+        linea = limpiar_final(linea);
         if (linea == "Objetivo" || linea == "objetivo")
         {
             getline(fuente, linea);
