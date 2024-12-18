@@ -1,8 +1,0 @@
-7
-R1: Si bajas25 Entonces enRacha, FC=0.4
-R2: Si bajasMas5 Entonces enRacha, FC=1
-R3: Si conexEstable Entonces tranquilo, FC=0.6
-R4: Si conexInestable Entonces tranquilo, FC=-1
-R5: Si equipoProf y ultMundial Entonces ganador, FC=0.9
-R6: Si antiguoCampeon Entonces ganador, FC=-0.4
-R7: Si enRacha y tranquilo Entonces ganador, FC=0.85
